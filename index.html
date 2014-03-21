@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-gb-x-sneddy">
+<title>HTML 5 Outliner</title>
+<style>
+    html { font:1.5em/1.2 Verdana, sans-serif; text-align:center  }
+    body { margin:1em auto; }
+    input { display:block; margin: 0 auto; font-size:1em } /* silly browsers */
+</style>
+<h1>HTML 5 Outliner</h1>
+<form method="post" enctype="multipart/form-data" action="process.py">
+    <p><label>Input HTML: <input type="file" name="upload"></label>
+    <p><input type="submit" value="Outline this!">
+</form>
+
+<form method="get" action="process.py">
+    <p><label>URL: <input type="url" name="url"></label>
+    <p><input type="submit" value="Outline this!">
+</form>
+
+<form method="post" action="process.py">
+    <p><label for=input>HTML:</label>
+    <p><textarea name=input id=input cols=72 rows=15 style="width: 75%;">
+&lt;doctype html>
+&lt;title>Hello, world!&lt;/title>
+&lt;h1>This is a section&lt;/h1>
+&lt;section>&lt;h1>And this a subsection!&lt;/h1>&lt;/section>
+</textarea>
+    <p><input type="submit" value="Outline this!">
+</form>
